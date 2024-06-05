@@ -32,4 +32,10 @@ def printword(guessedletters):
         else:
             print("_", end=" ") 
         counter+=1
-    return correct_letters    
+    return correct_letters   
+
+amount_of_timeswrong=0
+current_letters_guessed=[]
+current_letters_right=0
+# Flag to control the execution of "Letters Guessed so far" print statement
+first_iteration = True     
