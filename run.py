@@ -118,7 +118,7 @@ def main_game():
         print("\nCongratulations! You guessed the word:", randomword)
     else:
         print("\nGame is over! The word was:", randomword)
-'''def play_again():
+def play_again():
     while True:
         play_again = input("Do you want to play again? (Y/N): ").strip().lower()
         if play_again == 'y':
@@ -127,7 +127,7 @@ def main_game():
             return False
         else:
             print("Invalid input! Please enter 'Y' or 'N'.")
-            '''
+            
 
 # Display the logo and rules
 display_logo()
