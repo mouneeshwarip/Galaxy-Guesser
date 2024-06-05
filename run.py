@@ -2,6 +2,11 @@ import os
 import random
 from colorama import Fore, Style
 from spaceship import print_spaceship, clear_terminal
+from intro import display_logo, display_rules
+
+# Display the logo and rules
+display_logo()
+display_rules()
 
 # word lists for different levels
 wordlist_level1 = ['universe', 'galaxy', 'milkyway', 'planet', 'star', 'comet']
