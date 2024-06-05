@@ -1,8 +1,8 @@
 from colorama import Fore, Style
 
 def display_logo():
-    logo = f"""
-{Fore.CYAN}
+    logo = r"""
+
   
  
  
@@ -13,11 +13,10 @@ def display_logo():
                                                                         
                         
 
-{Fore.YELLOW}{Style.BRIGHT}*** Welcome to the Galaxy Guesser! ***
-{Style.RESET_ALL}                                                                                                 
+*** Welcome to the Galaxy Guesser! ***
+                                                                                              
 """
-    #print(logo)
-    print(logo.center(80))  # Center the logo on an 80-character wide console
+    print(Fore.CYAN + logo.center(80) + Style.RESET_ALL)
 
 # function to display rules
 '''
