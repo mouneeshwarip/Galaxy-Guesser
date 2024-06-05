@@ -172,6 +172,80 @@ I have been testing the code many times in my local terminal and on the Heroku s
 
 ![Thankyou message](assets/documentation_images/enter_sameword.png)
 
+#### Validations
+
+Used [CI Python Linter](https://pep8ci.herokuapp.com/) to validate if all the Python files follow the PEP8 style guide. 
+
+No errors were found.
+
+![PEP8 CI](assets/documentation_images/run.png)
+
+[Back to top](#table-of-contents)
+
+## Bugs
+
+### Solved bugs:
+1. **Deployment Error:** Encountered an application error while deploying to Heroku. Resolved it by connecting to Heroku CLI and troubleshooting with application logs, following advice from Stack Overflow.
+  
+  ![Deployment error](assets/documentation_images/Screenshot_herokuerror.png)
+
+2. I ran the code on CI Python Linter tool and corrected it as per the PEP8 style guide.
+
+3. **Commit Message Error:**Added an incorrect commit message. Resolved this issue by using git reset --hard HEAD~1 followed by git push --force, a solution I learned from a YouTube tutorial.
+
+4. **Repository and Template Issues:**Incorrect Repository Setup: Initially created the project without the correct Python template package, leading to deployment issues. Resolved this by creating a new repository with the appropriate template and rectifying the error at the last moment.
+
+### Unfixed Bugs:
+No known bugs.
+
+[Back to top](#table-of-contents)
+
+## Deployment
+
+This project is deployed on Heroku.
+
+1. Login to [Heroku](https://id.heroku.com/login) or create a account.
+2. On the main page, click the button labeled as New and from the drop-down menu select create New App.
+3. Please enter a unique app name.
+4. Select your region and click on Create App button
+5. Within your page, navigate to settings tab
+6. Scroll down to view the Config Vars section and click Reveal Config Vars.
+7. Enter port into the Key box and 8000 into the Value box and click the Add button.
+8. Next, scroll down to Buildpacks sections. Click Add buildpack and select python.
+9. Within the same section, click Add buildpack and select nodejs. Note it has to be in order, first will be python and then nodejs.
+10. Scroll up and navigate to Deploy tab.
+11. Select Github as the deployment method
+12. Search for the repository name and click the connect button
+13. Scroll to the bottom of the deploy page and select the preferred deployment type
+14. Click either Enable Automatic Deploys for automatic deployment when you push updates to Github or Manual deploy to deploy the current state of the branch you choose. I have used the manual method.
+
+[Back to top](#table-of-contents)
+
+## Credits
+### Content and resources
+1. Code Institute
+	- Course content for the portfolio project3 helped greatly in understanding the need to complete the project.
+	- The Love Sandwich project helped me understand various requirements from python point of view.
+2. W3 School
+	- Used to reference python related methods.
+3. stackoverflow
+	- Used to refer some python related workaround.
+4. ChatGpt 
+  - Helped me understand the types of issues I faced and provided guidance on resolving them effectively.  
+7. ASCII art websites to generate the logo and stages.
+8. Slack channels
+
+### Acknowledgements
+
+I would like to extend my heartfelt gratitude to the following people for their invaluable support and contributions to the success of this project:
+
+- My Mentor(Can Sucullu): For providing incredible last-minute corrections and tips that significantly improved the project.
+- Cohort Facilitator(Krystina): For consistently supplying the resources I needed and sharing insightful TED Talks that kept me motivated.
+- My Friend(Priyanka) and Colleagues: For being my last-minute saviors with great tips and hacks, ensuring I could tackle challenges effectively.
+- My Husband(Bala): The real pillar behind my project's submission. I am immensely grateful for his unwavering support, staying awake with me through sleepless nights and helping me understand the complex logics.
+
+*****************
+[Back to top](#table-of-contents)
 
 
 
