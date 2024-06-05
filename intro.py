@@ -42,21 +42,17 @@ def display_rules():
         try:
             user_input = input("Do you want to read the rules?(Y/N)\n").lower()
             if user_input == 'y':
-                print(f"""
-                {Fore.GREEN}Rules:{Style.RESET_ALL}
-
-                 1. Choose a level to play: 1, 2, or 3.
-                 2. Guess the letters to complete the word.
-                 3. You have a limited number of wrong guesses based on the level.
-                 4. Each wrong guess reduces the spaceship's battery level.
-                 5. Try to guess the word before the battery runs out!\n
-                 """)
+                print(f"""{Fore.GREEN}Rules:{Style.RESET_ALL}\n
+ 1. Choose a level to play: 1, 2, or 3.
+ 2. Guess the letters to complete the word.
+ 3. You have a limited number of wrong guesses based on the level.
+ 4. Each wrong guess reduces the spaceship's battery level.
+ 5. Try to guess the word before the battery runs out!\n """)
                 return True
-                print(rules)
             elif user_input == 'n':
-                print("Okay!, Lets Start!")
+                print("Okay!, Let's Start!")
                 return False
             else:
                 raise ValueError
         except ValueError:
-            typewriter_effects("Invalid choice: Please enter 'Y' or 'N'.\n")  
+            print("Invalid choice: Please enter 'Y' or 'N'.\n")
