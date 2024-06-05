@@ -138,6 +138,40 @@ I used the following libraries and modules:
 
 [Back to top](#table-of-contents)
 
+## Testing
+
+I have been testing the code many times in my local terminal and on the Heroku site.
+
+| Input  | Status |
+|--|--|
+|player can choose if rules are to be viewed or not | True |
+|Game Rules are displayed or skipped with respective to player choice  | True |
+|Game Rules are displayed or skipped with respective to player choice  | True |
+|player receiving a response if guessed letter was not an alphatetic | True |
+|If a player gives enter, invalid input message will be displayed | True |
+|spaceship turns yellow, if the number of attempts are mid-level | True |
+|spaceship turns red, if the number of attemps are low | True |
+|If a player chooses not to give a name, the default name has been taken| True |
+|player can view result - Won / Lost and the secret word | True |
+|player can play again | True |
+|player can Quit the game | True |
+
+- When a number, same letter or word with special characters is given, It is invalid.
+
+![Repeatition of letter input related](assets/documentation_images/enter_sameword.png)
+
+- when player gives any input apart from y or n, player is prompted with invaide choice.
+
+![Game rules related](assets/documentation_images/rules_related.png)
+
+- When player gives any input apart from y or n, player is prompted with invalid choice.
+
+![User input](assets/documentation_images/user_input.png)
+
+- When the player gives N for play again, Thank you for playing.
+
+![Thankyou message](assets/documentation_images/enter_sameword.png)
+
 
 
 
