@@ -28,16 +28,18 @@ def print_spaceship(level,wrong):
 
   Battery-level : 0    
     """
-    spaceship_full = f"""
-       .'.
-      |o o|
-     _| = |_
-    |       |
-    |       |
-    |_______|
-    """
+    if level == 1:
+        if wrong >= 5:
+            print(GREEN + spaceship + RESET)
+        elif wrong >= 3:
+            print(YELLOW + spaceship + RESET)
+        else:
+            print(RED + spaceship + RESET)
 
-    spaceship = {
+    
+
+
+    '''spaceship = {
         6: GREEN + spaceship_full + RESET,
         5: GREEN + spaceship_full + RESET,
         4: YELLOW + spaceship_full + RESET,
@@ -46,6 +48,6 @@ def print_spaceship(level,wrong):
         1: RED + spaceship_full + RESET,
         0: RED + spaceship_full + RESET
     }  
-
+'''
 
     
