@@ -1,5 +1,6 @@
 import os
 import random
+from spaceship import print_spaceship, clear_terminal
 
 # word lists for different levels
 wordlist_level1 = ['universe', 'galaxy', 'milkyway', 'planet', 'star', 'comet']
