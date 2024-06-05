@@ -20,7 +20,8 @@ def display_logo():
 {Fore.YELLOW}{Style.BRIGHT}*** Welcome to the Astro Hangman Game! ***
 {Style.RESET_ALL}                                                                                                 
 """
-    print(logo)
+    #print(logo)
+    print(logo.center(80))  # Center the logo on an 80-character wide console
 
 # function to display rules
 '''
