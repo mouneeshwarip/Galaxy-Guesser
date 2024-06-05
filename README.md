@@ -110,10 +110,18 @@ I was inspired while referring through many pp3 projects. I immediately knew, I 
 ## Future Features
 Due to time constraints, I wasn't able to add these features, but I would like to in the future.
 
-- A score board.
-- An ability to guess the whole word, if the player knows it.
+   -  **Score System**:
+      1. Implement a scoring system to track player performance.
+      2. Points awarded for correct guesses and successfully completing a word.
+      3. Bonus points for completing levels with fewer wrong guesses.
+   -  **Hints**:
+      1. Introduce a hint system to assist players in guessing the word.
+      2. Players can use hints, which will reveal a random letter in the word.
+      3. Limit the number of hints available per game to maintain challenge.
 
 [Back to top](#table-of-contents)
+
+
 
 
 
