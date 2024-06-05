@@ -158,7 +158,7 @@ I have been testing the code many times in my local terminal and on the Heroku s
 
 - When a number, same letter or word with special characters is given, It is invalid.
 
-![Repeatition of letter input related](assets/documentation_images/enter_sameword.png)
+![Repetition of letter input related](assets/documentation_images/enter_sameword.png)
 
 - when player gives any input apart from y or n, player is prompted with invaide choice.
 
@@ -167,6 +167,10 @@ I have been testing the code many times in my local terminal and on the Heroku s
 - When player gives any input apart from y or n, player is prompted with invalid choice.
 
 ![User input](assets/documentation_images/user_input.png)
+
+- When the player runs out of the max number of attempts, then the game ends.
+
+![Game ends](assets/documentation_images/game_ends.png)
 
 - When the player gives N for play again, Thank you for playing.
 
