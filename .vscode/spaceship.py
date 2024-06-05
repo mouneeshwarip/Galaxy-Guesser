@@ -42,6 +42,13 @@ def print_spaceship(level,wrong):
             print(YELLOW + spaceship + RESET)
         else:
             print(RED + spaceship + RESET)
+    else:        
+        if wrong >= 3:
+            print(GREEN + spaceship + RESET)
+        elif wrong >= 1:
+            print(YELLOW + spaceship + RESET)
+        else:
+            print(RED + spaceship + RESET)
 
     
 
