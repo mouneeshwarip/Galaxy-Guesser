@@ -1,4 +1,4 @@
-# CUT-2-CHASE
+# Galaxy Guesser
 
 ![Responsive Image](assets/documenattion_images/responsive_img.png)
 
@@ -66,6 +66,61 @@ I was inspired while referring through many pp3 projects. I immediately knew, I 
 - **Winning and Losing**:
   - Players win by correctly guessing the entire word.
   - The game ends when the maximum number of wrong guesses is reached or the correct word is guessed, depending on the chosen level.
+
+  [Back to top](#table-of-contents)
+
+  ## Features
+
+- At the start of the game - Welcomes the player and prompts to enter y/n to read the rules.
+
+![Introduction message](assets/documentation_images/intro.png)
+
+- Asks player to choose which level he/she wants to play.
+
+- Initially game displays the spaceship with green full battery level .
+
+![stage one](assets/documentation_images/initial_betterylevel.png)
+
+- If the letter is typed and the letter is in the hidden word, the hidden word is updated and displayed.
+
+- Along with the hidden word, guessed letters are displayed and the number of remaining attempts is displayed.
+
+![correct letter](assets/documentation_images/guesstheword.png)
+
+- If the letter is not in the word or if the letter is repeated, the number of attempts is reduced by 1 and the next stage is shown with all the updated details.
+
+![wrong letter1](assets/documentation_images/enter_sameword.png)
+
+
+![wrong letter2](assets/documentation_images/wrongguess.png)
+
+
+![repeated letter](assets/documentation_images/wrongguess_colred.png)
+
+- When the number of remaining attempts becomes zero, the game ends displaying the text you lost in ASCII art with the hidden letter.
+
+- If player have found the word, game ends displaying the text you Win in ASCII art with the hidden letter.
+
+![result in acsii art](assets/documentation_images/win.png)
+
+- players can choose to play again or quit.
+
+![result in acsii art](assets/documentation_images/lose_msg.png)
+
+## Future Features
+Due to time constraints, I wasn't able to add these features, but I would like to in the future.
+
+- A score board.
+- An ability to guess the whole word, if the player knows it.
+
+[Back to top](#table-of-contents)
+
+
+
+
+
+
+
 
 
 
