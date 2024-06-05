@@ -1,7 +1,11 @@
 import os
 import random
 
+# word lists for different levels
 wordlist_level1 = ['universe', 'galaxy', 'milkyway', 'planet', 'star', 'comet']
+wordlist_level2 = ['astronaut', 'telescope', 'satellite', 'nebula', 'orbit', 'gravity']
+wordlist_level3 = ['constellation', 'interstellar', 'microgravity',  'blackhole', 'exoplanet', 'quasar']
+
 
 max_wrongguesses_level1 = 6
 
