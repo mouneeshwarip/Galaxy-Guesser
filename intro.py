@@ -2,7 +2,7 @@ from colorama import Fore, Style
 
 def display_logo():
     logo = f"""
-{Fore.ORANGE}
+{Fore.CYAN}
   
  
  
@@ -13,7 +13,7 @@ def display_logo():
                                                                         
                         
 
-{Fore.YELLOW}{Style.BRIGHT}*** Welcome to the Astro Hangman Game! ***
+{Fore.YELLOW}{Style.BRIGHT}*** Welcome to the Galaxy Guesser! ***
 {Style.RESET_ALL}                                                                                                 
 """
     #print(logo)
