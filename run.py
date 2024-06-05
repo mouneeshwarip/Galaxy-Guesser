@@ -1,9 +1,23 @@
 import os
 import random
 from colorama import Fore, Style
-from spaceship import print_spaceship, clear_terminal
+from spaceship import print_spaceship
 from intro import display_logo, display_rules
 
+#Choosing the level
+def choose_level():
+    while True:
+        try:
+            level = int(input(" Which level would you like to play? Choose 1, 2, or 3:  \n"))
+            if level in [1, 2, 3]:
+                return level
+            else:
+                print(" Invalid input! Please enter 1, 2, or 3.\n")
+        except ValueError:
+            print(" Invalid input! Please enter a number (1, 2, or 3).\n")
+
+
+    
 def main_game():
    # word lists for different levels
     wordlist_level1 = ['universe', 'galaxy', 'milkyway', 'planet', 'star', 'comet']
@@ -15,21 +29,7 @@ def main_game():
     max_wrongguesses_level2 = 5
     max_wrongguesses_level3 = 4
 
-    # Clears the terminal
-    def clear_terminal():
-        os.system('cls' if os.name == 'nt' else 'clear')
-
-    # Choosing the level
-    def choose_level():
-        while True:
-            try:
-                level = int(input(" Which level would you like to play? Choose 1, 2, or 3:  \n"))
-                if level in [1, 2, 3]:
-                    return level
-                else:
-                    print(" Invalid input! Please enter 1, 2, or 3.\n")
-            except ValueError:
-                print(" Invalid input! Please enter a number (1, 2, or 3).\n")
+    
     level = choose_level() 
 
     # Setting word list and max wrong guesses based on chosen level
@@ -44,7 +44,7 @@ def main_game():
         max_wrongguesses = max_wrongguesses_level3
 
     # choose a random word from the list
-    randomword=random.choice(wordlist_level1)
+    randomword=random.choice(wordlist)
     print(" \n" + "_ " * len(randomword))
     print(" \nGuess this word correctly and travel to space with our spaceship\n")
     print(f""" {Fore.GREEN}
@@ -55,18 +55,20 @@ def main_game():
       |_______|
 
       Battery-level : |||||| <---- This indicates the battery level of the spaceship{Style.RESET_ALL}""")   
-
+    
     def printword(guessedletters):
         counter=0 ##index position
         correct_letters=0
         for char in randomword:
-            if(char in guessedletters):
-                print(randomword[counter], end=" ")
-                correct_letters +=1
-            else:
-                print("_", end=" ") 
-            counter+=1
-        return correct_letters   
+          if(char in guessedletters):
+             print(randomword[counter], end=" ")
+             correct_letters +=1
+          else:
+             print("_", end=" ") 
+          counter+=1
+        return correct_letters  
+
+     
 
     amount_of_timeswrong=0
     current_letters_guessed=[]
