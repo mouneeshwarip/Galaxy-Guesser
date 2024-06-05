@@ -69,4 +69,11 @@ while(amount_of_timeswrong != max_wrongguesses and current_letters_right != len(
     if letterguessed in randomword:
         print_spaceship(level,remaining_guesses)
         current_letters_right =printword(current_letters_guessed)
+    ##when the user is wrong
+    else:
+        amount_of_timeswrong+=1
+        remaining_guesses=max_wrongguesses-amount_of_timeswrong
+        print(f"Wrong guess!! You are allowed to make {remaining_guesses} more wrong guesses")   
+        print_spaceship(level,remaining_guesses)
+        printword(current_letters_guessed)    
    
