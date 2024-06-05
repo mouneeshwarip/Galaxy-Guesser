@@ -77,3 +77,8 @@ while(amount_of_timeswrong != max_wrongguesses and current_letters_right != len(
         print_spaceship(level,remaining_guesses)
         printword(current_letters_guessed)    
    
+if current_letters_right == len(randomword):
+    print("\nCongratulations! You guessed the word:", randomword)
+else:
+    print("\nGame is over! The word was:", randomword)
+    print("Thank you for playing!")
