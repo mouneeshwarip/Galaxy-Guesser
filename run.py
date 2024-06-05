@@ -38,4 +38,20 @@ amount_of_timeswrong=0
 current_letters_guessed=[]
 current_letters_right=0
 # Flag to control the execution of "Letters Guessed so far" print statement
-first_iteration = True     
+first_iteration = True   
+
+while(amount_of_timeswrong != max_wrongguesses and current_letters_right != len(randomword)):
+    '''
+    print("\n Letters Guessed so far: ")
+    for letter in current_letters_guessed:
+        print(letter, end=" ")
+    letterguessed=input("\n Guess a letter: \n").lower() ##convert input to lower
+    '''
+    if not first_iteration:
+        print("\n Letters Guessed so far: ")
+        for letter in current_letters_guessed:
+            print(letter, end=" ")
+    else:
+        first_iteration = False
+
+    letterguessed = input("\n Guess a letter: \n").lower()  # Convert input to lower
