@@ -1,5 +1,6 @@
 import os
 import random
+from colorama import Fore, Style
 from spaceship import print_spaceship, clear_terminal
 
 # word lists for different levels
