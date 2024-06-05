@@ -108,7 +108,7 @@ I was inspired while referring through many pp3 projects. I immediately knew, I 
 ![result in acsii art](assets/documentation_images/lose_msg.png)
 
 ## Future Features
-Due to time constraints, I wasn't able to add these features, but I would like to in the future.
+Due to time constraints, I wasn't able to add these features, but I would like to add in the future.
 
    -  **Score System**:
       1. Implement a scoring system to track player performance.
@@ -118,6 +118,23 @@ Due to time constraints, I wasn't able to add these features, but I would like t
       1. Introduce a hint system to assist players in guessing the word.
       2. Players can use hints, which will reveal a random letter in the word.
       3. Limit the number of hints available per game to maintain challenge.
+
+[Back to top](#table-of-contents)
+
+## Technologies Used
+
+- **Git** Used to version control throughout my project and to ensure that a clean record is maintained.
+- **GitHub**  Used to store the project's code after being pushed from Git
+- **Heroku** Used to deploy the live project
+- **GitPod** Used as an Integrated Development Environment for building this website.
+
+ **Languages Used**
+- Python
+
+**Python Packages/ Libraries Used**
+I used the following libraries and modules:
+- Random: (choice) returns a random word from a list of words.
+- Colorama: (Fore) to apply different color to texts.
 
 [Back to top](#table-of-contents)
 
