@@ -11,6 +11,19 @@ The live version of the project can be viewed [here](https://galaxy-guesser-2406
 
 You can check out my Repository [here](https://github.com/mouneeshwarip/Galaxy-Guesser)
 
-
+## Table of contents
+ 1. [ UX ](#ux)
+	- [Site Goal](#site-goal)
+	- [User Stories](#user-stories)
+ 2. [How to play](#how-to-play)
+ 2. [ Features ](#features)
+ 3. [ Future Feature ](#future-features)
+ 4. [ Technology used ](#technologies-used)
+ 5. [ Testing ](#testing)
+	 - [Manual Testing](#manual-testing)
+	 - [Validations](#validations)
+ 6. [ Bugs ](#bugs)
+ 7. [ Deployment](#deployment)
+ 8. [ Citation of Sources](#credits)
 
 
