@@ -18,21 +18,6 @@ def display_logo():
 """
     print(Fore.CYAN + logo.center(80) + Style.RESET_ALL)
 
-# function to display rules
-'''
-def display_rules():
-    rules = f"""
-{Fore.GREEN}Rules:{Style.RESET_ALL}
-1. Choose a level to play: 1, 2, or 3.
-2. Guess the letters to complete the word.
-3. You have a limited number of wrong guesses based on the level.
-4. Each wrong guess reduces the spaceship's battery level.
-5. Try to guess the word before the battery runs out!
-"""
-    print(rules)
-
-    '''  
-
 def display_rules():
     '''
     Requesting user to provide input whether

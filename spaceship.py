@@ -50,18 +50,5 @@ def print_spaceship(level,wrong):
         else:
             print(RED + spaceship + RESET)
 
-    
-
-
-    '''spaceship = {
-        6: GREEN + spaceship_full + RESET,
-        5: GREEN + spaceship_full + RESET,
-        4: YELLOW + spaceship_full + RESET,
-        3: YELLOW + spaceship_full + RESET,
-        2: RED + spaceship_full + RESET,
-        1: RED + spaceship_full + RESET,
-        0: RED + spaceship_full + RESET
-    }  
-'''
 
     
