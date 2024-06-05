@@ -64,3 +64,9 @@ while(amount_of_timeswrong != max_wrongguesses and current_letters_right != len(
         print("You already guessed that letter!")
         continue
     current_letters_guessed.append(letterguessed) 
+    ##when the user is right
+    remaining_guesses=max_wrongguesses-amount_of_timeswrong
+    if letterguessed in randomword:
+        print_spaceship(level,remaining_guesses)
+        current_letters_right =printword(current_letters_guessed)
+   
