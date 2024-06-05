@@ -9,7 +9,10 @@ wordlist_level2 = ['astronaut', 'telescope', 'satellite', 'nebula', 'orbit', 'gr
 wordlist_level3 = ['constellation', 'interstellar', 'microgravity',  'blackhole', 'exoplanet', 'quasar']
 
 
+# maximum wrong guesses for different levels
 max_wrongguesses_level1 = 6
+max_wrongguesses_level2 = 5
+max_wrongguesses_level3 = 4
 
 # Clears the terminal
 def clear_terminal():
