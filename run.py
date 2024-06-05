@@ -55,3 +55,12 @@ while(amount_of_timeswrong != max_wrongguesses and current_letters_right != len(
         first_iteration = False
 
     letterguessed = input("\n Guess a letter: \n").lower()  # Convert input to lower
+
+    ##check if the input is a valid alphabetical letter and the length of the letter
+    if not letterguessed.isalpha() or len(letterguessed) !=1:
+        print("Invalid input! Please enter an alphabetical letter.")
+        continue
+    if letterguessed in current_letters_guessed:
+        print("You already guessed that letter!")
+        continue
+    current_letters_guessed.append(letterguessed) 
