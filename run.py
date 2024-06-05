@@ -21,3 +21,15 @@ print(f""" {Fore.GREEN}
   |_______|
 
   Battery-level : |||||| <---- This indicates the battery level of the spaceship. Finish the game before exhausting the battery. {Style.RESET_ALL}""")   
+
+def printword(guessedletters):
+    counter=0 ##index position
+    correct_letters=0
+    for char in randomword:
+        if(char in guessedletters):
+            print(randomword[counter], end=" ")
+            correct_letters +=1
+        else:
+            print("_", end=" ") 
+        counter+=1
+    return correct_letters    
