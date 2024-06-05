@@ -132,10 +132,9 @@ def play_again():
 # Display the logo and rules
 display_logo()
 display_rules()
-'''
+
 while True:
     main_game()
     if not play_again():
         print("Thank you for playing!")
         break   
-    '''
