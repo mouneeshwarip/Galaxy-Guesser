@@ -73,7 +73,7 @@ I was inspired while referring through many pp3 projects. I immediately knew, I 
 
 - At the start of the game - Welcomes the player and prompts to enter y/n to read the rules.
 
-![Introduction message](assets/documentation_images/intro.png)
+![Introduction message](assets/documentation_images/galaxy_g.png)
 
 - Asks player to choose which level he/she wants to play.
 
