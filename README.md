@@ -87,7 +87,9 @@ I was inspired while referring through many pp3 projects. I immediately knew, I 
 
 ![correct letter](assets/documentation_images/guesstheword.png)
 
-- If the letter is not in the word or if the letter is repeated, the number of attempts is reduced by 1 and the next stage is shown with all the updated details.
+- If the letter is not in the word, the number of attempts is reduced by 1 and the next stage is shown with all the updated details.
+
+- If the letter has already been guessed, a prompt is shown for the same and the user is asked to guess again without any reduction in the attempts.
 
 ![wrong letter1](assets/documentation_images/enter_sameword.png)
 
@@ -99,16 +101,18 @@ I was inspired while referring through many pp3 projects. I immediately knew, I 
 
 - When the number of remaining attempts becomes zero, the game ends displaying the text you lost in ASCII art with the hidden letter.
 
-- If player have found the word, game ends displaying the text you Win in ASCII art with the hidden letter.
+- If player has guessed the hidden word, game ends congratulating the player with a message.
 
-![result in acsii art](assets/documentation_images/win.png)
+![result](assets/documentation_images/win.png)
+
+- If player has not guessed the word, game ends with a GAME OVER message and displaying the hidden word.
 
 - players can choose to play again or quit.
 
-![result in acsii art](assets/documentation_images/lose_msg.png)
+![result](assets/documentation_images/lose_msg.png)
 
 ## Future Features
-Due to time constraints, I wasn't able to add these features, but I would like to add in the future.
+Some future additions to the game could be the following:
 
    -  **Score System**:
       1. Implement a scoring system to track player performance.
@@ -140,27 +144,25 @@ I used the following libraries and modules:
 
 ## Testing
 
-I have been testing the code many times in my local terminal and on the Heroku site.
+The code has been tested multiple times on the local terminal and on the Heroku site.
 
 | Input  | Status |
 |--|--|
-|player can choose if rules are to be viewed or not | True |
-|Game Rules are displayed or skipped with respective to player choice  | True |
-|Game Rules are displayed or skipped with respective to player choice  | True |
-|player receiving a response if guessed letter was not an alphatetic | True |
-|If a player gives enter, invalid input message will be displayed | True |
-|spaceship turns yellow, if the number of attempts are mid-level | True |
-|spaceship turns red, if the number of attemps are low | True |
-|If a player chooses not to give a name, the default name has been taken| True |
-|player can view result - Won / Lost and the secret word | True |
-|player can play again | True |
-|player can Quit the game | True |
+|Player can choose if rules are to be viewed or not | True |
+|Game rules are displayed or skipped with respective to player choice  | True |
+|Player receiving a response if guessed letter was not an alphabet | True |
+|If a player gives a non-alphabetical input, invalid input message will be displayed | True |
+|Spaceship turns yellow, if the number of attempts remaining are mid-level | True |
+|Spaceship turns red, if the number of attemps are low | True |
+|Player can view result - Won / Lost and the secret word | True |
+|Player can play again | True |
+|Player can quit the game | True |
 
-- When a number, same letter or word with special characters is given, It is invalid.
+- When a number, same letter or word with special characters is given, it is invalid.
 
 ![Repetition of letter input related](assets/documentation_images/enter_sameword.png)
 
-- when player gives any input apart from y or n, player is prompted with invaide choice.
+- when player gives any input apart from y or n, player is prompted with invalid choice.
 
 ![Game rules related](assets/documentation_images/rules_related.png)
 
@@ -244,7 +246,7 @@ This project is deployed on Heroku.
 I would like to extend my heartfelt gratitude to the following people for their invaluable support and contributions to the success of this project:
 
 - My Mentor(Can Sucullu): For providing incredible last-minute corrections and tips that significantly improved the project.
-- Cohort Facilitator(Krystina): For consistently supplying the resources I needed and sharing insightful TED Talks that kept me motivated.
+- Cohort Facilitator(Krystina): For consistently supplying the resources I needed and sharing insightful pep talks that kept me motivated.
 - My Friend(Priyanka) and Colleagues: For being my last-minute saviors with great tips and hacks, ensuring I could tackle challenges effectively.
 - My Husband(Bala): The real pillar behind my project's submission. I am immensely grateful for his unwavering support, staying awake with me through sleepless nights and helping me understand the complex logics.
 
