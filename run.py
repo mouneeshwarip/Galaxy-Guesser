@@ -54,8 +54,8 @@ def main_game():
     # choose a random word from the list
     randomword = random.choice(wordlist)
     print(" \n" + "_ " * len(randomword))
-    print(" \nGuess this word correctly and travel\
-    to space with our spaceship\n")
+    print(" \nGuess this word correctly and travel" +
+          " to space with our spaceship\n")
     print(f"""{Fore.GREEN}
      .'.
     |o o|
@@ -64,8 +64,8 @@ def main_game():
   |_______|
 
 
-    Battery-level : |||||| <---- This indicates the battery level\
-    of the spaceship{Style.RESET_ALL}""")
+    Battery-level : |||||| <---- This indicates the battery level
+                                 of the spaceship{Style.RESET_ALL}\n""")
 
     def printword(guessedletters):
         counter = 0  # index position
@@ -113,8 +113,8 @@ def main_game():
         else:
             amount_of_timeswrong += 1
             remaining_guesses = max_wrongguesses - amount_of_timeswrong
-            print(f"Wrong guess!! You are allowed to\
-            make {remaining_guesses} more wrong guesses\n")
+            print(f"Wrong guess!! You are allowed to" +
+                  f" make {remaining_guesses} more wrong guesses\n")
             print_spaceship(level, remaining_guesses)
             printword(current_letters_guessed)
 
@@ -129,8 +129,8 @@ def play_again():
     Prompt the user to play the game again.
     '''
     while True:
-        play_again = input("Do you want to play again?\
-        (Y/N):\n").strip().lower()
+        play_again = input("Do you want to play again?" +
+                           " (Y/N):\n").strip().lower()
         if play_again == 'y':
             return True
         elif play_again == 'n':
