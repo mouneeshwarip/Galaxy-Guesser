@@ -1,22 +1,17 @@
 from colorama import Fore, Style
 
+
 def display_logo():
     logo = r"""
+ ____   _   _      _   _   _ _  _   ____  _  _ ___  ___  ___ ___ ____
+).-._( )_\ ) |    )_\ ) ( ) | () ( ).-._() () | __((  _((  _| __(  _ \
+|( ,-./( )\| (__ /( )\ ) | ('.  /  |( ,-.| \/ | _) _) \ _) \| _))  ' /
+)_`__|_/ \_|____|_/ \_|_( )_(/_(   )_`__()____|___|____)____)___(_()_\
 
-  
- 
- 
- ____   _   _      _   _   _ _  _   ____  _  _ ___  ___  ___ ___ ____   
-).-._( )_\ ) |    )_\ ) ( ) | () ( ).-._() () | __((  _((  _| __(  _ \  
-|( ,-./( )\| (__ /( )\ ) | ('.  /  |( ,-.| \/ | _) _) \ _) \| _))  ' /  
-)_`__|_/ \_|____|_/ \_|_( )_(/_(   )_`__()____|___|____)____)___(_()_\  
-                                                                        
-                        
-
-*** Welcome to the Galaxy Guesser! ***
-                                                                                              
+    *** Welcome to the Galaxy Guesser! ***
 """
     print(Fore.CYAN + logo.center(80) + Style.RESET_ALL)
+
 
 def display_rules():
     '''
@@ -40,4 +35,4 @@ def display_rules():
             else:
                 raise ValueError
         except ValueError:
-            print("Invalid choice: Please enter 'Y' or 'N'.\n")
+            print("Invalid choice: Please enter 'Y' or 'N'.")

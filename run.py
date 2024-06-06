@@ -4,11 +4,15 @@ from colorama import Fore, Style
 from spaceship import print_spaceship
 from intro import display_logo, display_rules
 
-#Choosing the level
+
 def choose_level():
+    '''
+    Prompt the user to choose a difficulty level for the game.
+    '''
     while True:
         try:
-            level = int(input(" Which level would you like to play? Choose 1, 2, or 3:  \n"))
+            level = int(input(" Which level would you like\
+            to play? Choose 1, 2, or 3:  \n"))
             if level in [1, 2, 3]:
                 return level
             else:
@@ -17,38 +21,41 @@ def choose_level():
             print(" Invalid input! Please enter a number (1, 2, or 3).\n")
 
 
-    
 def main_game():
-   # word lists for different levels
-    wordlist_level1 = ['universe', 'galaxy', 'milkyway', 'planet', 'star', 'comet']
-    wordlist_level2 = ['astronaut', 'telescope', 'satellite', 'nebula', 'orbit', 'gravity']
-    wordlist_level3 = ['constellation', 'interstellar', 'microgravity',  'blackhole', 'exoplanet', 'quasar']
+   '''
+   Main logic of the Galaxy Guesser game.
+   This function contains the primary game loop.
+   ''' 
+    # word lists for different levels
+   wordlist_level1 = ['universe', 'galaxy', 'milkyway', 'planet', 'star', 'comet']
+   wordlist_level2 = ['astronaut', 'telescope', 'satellite', 'nebula', 'orbit', 'gravity']
+   wordlist_level3 = ['constellation', 'interstellar', 'microgravity',  'blackhole', 'exoplanet', 'quasar']
    
    # maximum wrong guesses for different levels
-    max_wrongguesses_level1 = 6
-    max_wrongguesses_level2 = 5
-    max_wrongguesses_level3 = 4
+   max_wrongguesses_level1 = 6
+   max_wrongguesses_level2 = 5
+   max_wrongguesses_level3 = 4
 
     
-    level = choose_level() 
+   level = choose_level() 
 
     # Setting word list and max wrong guesses based on chosen level
-    if level == 1:
+   if level == 1:
         wordlist = wordlist_level1
         max_wrongguesses = max_wrongguesses_level1
-    elif level == 2:
+   elif level == 2:
         wordlist = wordlist_level2
         max_wrongguesses = max_wrongguesses_level2
-    else:
+   else:
         wordlist = wordlist_level3
         max_wrongguesses = max_wrongguesses_level3
 
     # choose a random word from the list
-    randomword=random.choice(wordlist)
-    print(" \n" + "_ " * len(randomword))
-    print(" \nGuess this word correctly and travel to space with our spaceship\n")
-    print(f""" {Fore.GREEN}
-         .'.  
+   randomword=random.choice(wordlist)
+   print(" \n" + "_ " * len(randomword))
+   print(" \nGuess this word correctly and travel to space with our spaceship\n")
+   print(f""" {Fore.GREEN}
+         .'.
         |o o|
        _| = |_
       |       |
@@ -56,7 +63,7 @@ def main_game():
 
       Battery-level : |||||| <---- This indicates the battery level of the spaceship{Style.RESET_ALL}""")   
     
-    def printword(guessedletters):
+   def printword(guessedletters):
         counter=0 ##index position
         correct_letters=0
         for char in randomword:
@@ -70,14 +77,14 @@ def main_game():
 
      
 
-    amount_of_timeswrong=0
-    current_letters_guessed=[]
-    current_letters_right=0
+   amount_of_timeswrong=0
+   current_letters_guessed=[]
+   current_letters_right=0
     # Flag to control the execution of "Letters Guessed so far" print statement
-    first_iteration = True 
+   first_iteration = True 
 
 
-    while(amount_of_timeswrong != max_wrongguesses and current_letters_right != len(randomword)):
+   while(amount_of_timeswrong != max_wrongguesses and current_letters_right != len(randomword)):
         if not first_iteration:
             print(" \n Letters Guessed so far: \n")
             for letter in current_letters_guessed:
@@ -108,9 +115,9 @@ def main_game():
             print_spaceship(level,remaining_guesses)
             printword(current_letters_guessed)    
     
-    if current_letters_right == len(randomword):
+   if current_letters_right == len(randomword):
         print(" \nCongratulations! You guessed the word:\n", randomword)
-    else:
+   else:
         print(" \nGame is over! The word was:\n", randomword)
 
 #if the user continue to play        
