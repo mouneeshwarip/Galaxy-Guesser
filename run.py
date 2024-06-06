@@ -11,7 +11,8 @@ def choose_level():
     '''
     while True:
         try:
-            level = int(input("Do you want to play level 1, 2, or 3:\n"))
+            level = int(input("Which level would you like" +
+                              " to choose? 1, 2, or 3:\n"))
             if level in [1, 2, 3]:
                 return level
             else:
